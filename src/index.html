@@ -5,96 +5,105 @@
 })
 
 <body>
-   @@include('html/header.html',{})
-   <main>
-      <div class="title-page">
-         <div class="__container">
-            <div class="title-page__main">
-               <div class="main__slogan">
-                  <div class="slogan__logo">
-                     <div class="logo__top">
-                        <div class="top__atlant"><img src="@img/logo__atlant.png" alt=""></div>
-                        <div class="top__t"><img src="@img/logo__t.png" alt=""></div>
-                        <div class="top__gaz"><img src="@img/logo__gaz.png" alt=""></div>
+   <div class="wrapper">
+      <main>
+         <div class="title-page">
+            <div class="__container">
+               <div class="title-page__main">
+                  <div class="main__slogan">
+                     <div class="slogan__logo">
+                        <div class="logo__top">
+                           <div class="top__atlant"><img src="@img/logo__atlant.png" alt=""></div>
+                           <div class="top__t"><img src="@img/logo__t.png" alt=""></div>
+                           <div class="top__gaz"><img src="@img/logo__gaz.png" alt=""></div>
+                        </div>
+                        <div class="logo__bottom"><img src="@img/logo__slogan.png" alt=""></div>
                      </div>
-                     <div class="logo__bottom"><img src="@img/logo__slogan.png" alt=""></div>
-                  </div>
-                  <div class="slogan__text">
-                     <p class="text">Расправь плечи в теплом доме</p>
-                  </div>
-               </div>
-               <div class="main__time-weather">
-                  <div class="main__time block__arrow">
-                     <div class="time__icons block__ar">
-                        <div class="icon"><img src="@img/moon.svg" alt=""></div>
-                        <div class="icon"><img src="@img/arrow.svg" alt=""></div>
-                        <div class="icon"><img src="@img/sun.svg" alt=""></div>
+                     <div class="slogan__text">
+                        <p class="text">Расправь плечи в теплом доме</p>
                      </div>
-                     <div class="time__text text-grey block__arrow-text">В любое время дня и ночи</div>
                   </div>
-                  <div class="main__weather block__arrow">
-                     <div class="time__icons block__ar">
-                        <div class="icon"><img src="@img/cloud.svg" alt=""></div>
-                        <div class="icon"><img src="@img/arrow.svg" alt=""></div>
-                        <div class="icon"><img src="@img/snowflake.svg" alt=""></div>
+                  <div class="main__time-weather">
+                     <div class="main__time block__arrow">
+                        <div class="time__icons block__ar">
+                           <div class="icon"><img src="@img/moon.svg" alt=""></div>
+                           <div class="icon"><img src="@img/arrow.svg" alt=""></div>
+                           <div class="icon"><img src="@img/sun.svg" alt=""></div>
+                        </div>
+                        <div class="time__text text-grey block__arrow-text">В любое время дня и ночи</div>
                      </div>
-                     <div class="time__text text-grey block__arrow-text">Вне зависимости от погодных условий</div>
+                     <div class="main__weather block__arrow">
+                        <div class="time__icons block__ar">
+                           <div class="icon"><img src="@img/cloud.svg" alt=""></div>
+                           <div class="icon"><img src="@img/arrow.svg" alt=""></div>
+                           <div class="icon"><img src="@img/snowflake.svg" alt=""></div>
+                        </div>
+                        <div class="time__text text-grey block__arrow-text">Вне зависимости от погодных условий</div>
+                     </div>
                   </div>
-               </div>
-               <div class="main__delivery">
-                  <div class="delivery__text">
-                     <h1 class="text"><span class="text__blue">Доставим газ<br>за 4 часа</span><br>в любую точку
-                        Москвы<br>и Московской области</h1>
-                  </div>
-                  <div class="delivery__button">
-                     <div class="button__link block-link">
-                        <div class="button block-link__blue">
-                           <a href="#" class="blue__link">Заказать доставку газа<br>в газгольдер</a>
+                  <div class="main__delivery">
+                     <div class="delivery__text">
+                        <h1 class="text"><span class="text__blue">Доставим газ<br>за 4 часа</span><br>в любую точку
+                           Москвы<br>и Московской области</h1>
+                     </div>
+                     <div class="delivery__button">
+                        <div class="button__link block-link">
+                           <div class="button block-link__blue">
+                              <a href="#" class="blue__link">Заказать доставку газа<br>в газгольдер</a>
+                           </div>
+                        </div>
+                        <div class="button__bottom">
+                           <p class="bottom__text">Доставка газа всегда по актуальным ценам</p>
                         </div>
                      </div>
-                     <div class="button__bottom">
-                        <p class="bottom__text">Доставка газа всегда по актуальным ценам</p>
+                  </div>
+               </div>
+               <div class="title-page__tel">
+                  <div class="tel__link"><a href="tel:+79263306834">+7 926 330-68-34</a></div>
+                  <div class="tel__quastion">Срочный вопрос</div>
+               </div>
+               <!--<div class="title-page__background"><img src="@img/background__main-page.png" alt=""></div>-->
+            </div>
+         </div>
+         <div class="price-gaz">
+            <div class="__container">
+               <div class="price-gaz__title title-page--blue">Стоимость газа в ваш газгольдер сегодня</div>
+               <div class="price-gaz__main">
+                  <div class="price-gaz__propane price-gaz__gaz">
+                     <div class="price-gaz__main-text">
+                        <div class="gaz__title"><span class="title__bold">Пропан</span><br> от 25 рублей за литр</div>
+                        <div class="gaz__info"><p class="info__text">Физически испарение происходит до -40 градусов, что позволяет использовать его в наших с вами погодных условиях</p></div>
+                     </div>
+                     <div class="gaz__button">
+                        <a href="#" class="button__link button-link--border">Заказать</a>
+                     </div>
+                  </div>
+                  <div class="price-gaz__ratio">
+                     <div class="ratio__title">Идеальное соотношение</div>
+                     <div class="ratio__number">
+                        <div class="number__propane"><span class="number__bold">80%</span><br>пропана</div>
+                        <div class="number__butane"><span class="number__bold">20%</span><br>бутана</div>
+                     </div>
+                     <div class="ratio__photo"><img src="@img/page-price.png" alt="" class="ratio__img"></div>
+                  </div>
+                  <div class="price-gaz__butane price-gaz__gaz">
+                     <div class="price-gaz__main-text">
+                        <div class="gaz__title"><span class="title__bold">Бутан</span><br> от 16 рублей за литр</div>
+                        <div class="gaz__info"><p class="info__text">Испарение Бутана происходит только до 0 градусов и годится для использования в тёплое время года</p></div>
+                     </div>
+                     <div class="gaz__button">
+                        <a href="#" class="button__link button-link--border">Заказать</a>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="title-page__tel">
-               <div class="tel__link"><a href="tel:+79263306834">+7 926 330-68-34</a></div>
-               <div class="tel__quastion">Срочный вопрос</div>
-            </div>
-         </div>
-      </div>
-      <div class="price-gaz">
-         <div class="__container">
-            <div class="price-gaz__title title-page--blue">Стоимость газа в ваш газгольдер сегодня</div>
-            <div class="price-gaz__main">
-               <div class="price-gaz__propane price-gaz__gaz">
-                  <div class="gaz__title"><span class="title__bold">Пропан</span><br> от 25 рублей за литр</div>
-                  <div class="gaz__info"><p class="info__text">Физически испарение происходит до -40 градусов, что позволяет использовать его в наших с вами погодных условиях</p></div>
-                  <div class="gaz__button">
-                     <a href="#" class="button__link">Заказать</a>
-                  </div>
-               </div>
-               <div class="price-gaz__ratio">
-                  <div class="ratio__title"></div>
-                  <div class="ratio__number">
-                     <div class="number__propane"><span class="number__bold">80%</span><br>пропана</div>
-                     <div class="number__butane"><span class="number__bold">20%</span><br>бутана</div>
-                  </div>
-                  <div class="ratio__photo"></div>
-               </div>
-               <div class="price-gaz__butane price-gaz__gaz">
-                  <div class="gaz__title"><span class="title__bold">Бутан</span><br> от 16 рублей за литр</div>
-                  <div class="gaz__info"><p class="info__text">Испарение Бутана происходит только до 0 градусов и годится для использования в тёплое время года</p></div>
-                  <div class="gaz__button">
-                     <a href="#" class="button__link">Заказать</a>
-                  </div>
+               <div class="price-gaz__continue">
+                  <a href="#" class="price-gaz__continue-link"><img src="@img/price-gaz__continue.svg" alt=""></a>
                </div>
             </div>
          </div>
-      </div>
-   </main>
-   @@include('html/footer.html',{})
+      </main>
+      @@include('html/footer.html',{})
+   </div>
    <script src="js/app.min.js"></script>
 </body>
 
