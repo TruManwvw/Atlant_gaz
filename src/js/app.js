@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
-
+import "./spollers.js";
+import "./tel-mask.js";
 flsFunctions.isWebp();
 
 //Добавление кнопке класса active и его элементу
@@ -28,3 +29,4 @@ function onTabClick(item) {
         }
     });
 }
+
